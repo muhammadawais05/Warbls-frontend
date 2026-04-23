@@ -1,0 +1,47 @@
+.pagination-wrapper {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.pagination-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  column-gap: 2rem;
+  text-decoration: none;
+  margin: 0;
+}
+.pagination-list li a {
+  color: white;
+  text-decoration: none !important;
+  font-size: 12px;
+}
+.active-page {
+  background-color: blue;
+  color: white !important;
+  padding: 0px 5px;
+}
+
+.first-class a,
+.last-class a,
+.next-class a,
+.prev-class a {
+  padding: 10px 10px;
+  color: black !important;
+
+  background-color: white;
+  font-weight: medium;
+}
+
+@media (max-width: 650px) {
+  .pagination-wrapper {
+    width: 100%;
+  }
+
+  .next-class a,
+  .prev-class a {
+    display: none;
+  }
+}
